@@ -5,6 +5,7 @@
 :root {
     --White: #F6F6F6;
     --Gray: #ABB4BD;
+    --Purple: #8769FF;
     --Primary: #EF3651;
     --Background: #1E1F28;
     --Dark: #2A2C36;
@@ -41,7 +42,7 @@ main h1 {
 }
 
 .Destaque {
-    color: var(--Primary);
+    color: var(--Purple);
 }
 
 .Container {
@@ -68,13 +69,26 @@ input {
 
 .TextFieldDiv {
     margin-bottom: 0.6rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Resultado {
     display: none;
     color: var(--Gray);
-    padding: 15px 0px;
     border: 1px solid red;
+    border-radius: 2px;
+    padding: 10px;
+    text-align: center;
+}
+
+.Imc {
+    font-size: 0.8rem;
+}
+
+.SubmitDiv {
+    display: flex;
+    justify-content: center;
 }
 
 .SubmitBtn {
@@ -82,7 +96,8 @@ input {
     color: var(--Ordinary);
     text-transform: uppercase;
     font-size: 0.8rem;
-    background-color: var(--Primary);
+    font-weight: 500;
+    background-color: var(--Purple);
     border: none;
     border-radius: 25px;
     padding: 7px 10px;
@@ -95,10 +110,16 @@ input {
     color: var(--Ordinary);
     text-transform: uppercase;
     font-size: 0.8rem;
-    background-color: var(--Primary);
+    background-color: var(--Purple);
     border: none;
     border-radius: 25px;
-    box-shadow: 0px 4px 8px 0px rgba(239, 54, 82, 0.3);
+    box-shadow: 0px 4px 8px 0px rgb(114, 105, 255, 0.3);
     padding: 7px 10px;
     transition: 0.3s;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
