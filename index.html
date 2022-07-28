@@ -9,30 +9,30 @@
 </head>
 <body>
     <main>
-        <h1>Calculadora de IMC &#128151;</h1>
+        <h1>Calculadora de <span class="Destaque">IMC</span> &#x1F47B;</h1>
 
-        <div>
-            <form>
-                <p>Sexo: </p>
-                <label for="masc">M</label>
-                <input type="radio" name="optSexo" id="masc" value="m">
-                <label for="fem">F</label>
-                <input type="radio" name="optSexo" id="fem" value="f">
-            
-                <label for="txtAltura">Altura</label>
-                <input type="number" name="txtAltura" id="txtAltura">
+        <div class="Container">
+            <form name="form" id="form">
+                <div class="TextFieldDiv">
+                    <label for="peso">Peso</label>
+                    <input type="number" step="0.01" name="peso" id="peso">
+                </div>
+                
+                <div class="TextFieldDiv">
+                    <label for="altura">Altura</label>
+                    <input type="number" step="0.01" name="altura" id="altura">
+                </div>
+                
+                <div class="Resultado">
+                    <p>Resultado</p>
+                </div>
 
-                <label for="txtIdade">Idade</label>
-                <input type="number" name="txtIdade" id="txtIdade">
-
-                <input type="submit" value="Calcular">
+                <input type="submit" class="SubmitBtn" value="Calcular">
             </form>
         </div>
     </main>
 
 
-    <script>
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,5 +1,21 @@
 @charset 'UTF-8';
 
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --White: #F6F6F6;
+    --Gray: #ABB4BD;
+    --Primary: #EF3651;
+    --Background: #1E1F28;
+    --Dark: #2A2C36;
+    --Error: #FF2424;
+    --Success: #55D85A;
+    --Hot: #FF3E3E;
+    --Ordinary: #F5F5F5;
+
+    --Encode: 'Encode Sans', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +23,82 @@
 }
 
 body {
-    background-color: #1E1F28;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #F6F6F6;
+    background-color: var(--Background);
+    font-family: var(--Encode);
+    color: var(--White);
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+main h1 {
+    text-align: center;
+}
+
+.Destaque {
+    color: var(--Primary);
+}
+
+.Container {
+    background-color: var(--Dark);
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    min-width: 300px;
+    max-width: 600px;
+    border-radius: 5px;
+
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    font-weight: 300;
+}
+
+input {
+    background-color: var(--Ordinary);
+    border: none;
+    border-radius: 2px;
+    padding: 3px 7px;
+}
+
+.TextFieldDiv {
+    margin-bottom: 0.6rem;
+}
+
+.Resultado {
+    display: none;
+    color: var(--Gray);
+    padding: 15px 0px;
+    border: 1px solid red;
+}
+
+.SubmitBtn {
+    cursor: pointer;
+    color: var(--Ordinary);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background-color: var(--Primary);
+    border: none;
+    border-radius: 25px;
+    padding: 7px 10px;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+
+.SubmitBtn:hover {
+    cursor: pointer;
+    color: var(--Ordinary);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background-color: var(--Primary);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px 0px rgba(239, 54, 82, 0.3);
+    padding: 7px 10px;
+    transition: 0.3s;
 }
