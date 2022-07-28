@@ -39,6 +39,7 @@ main {
 
 main h1 {
     text-align: center;
+    font-size: 2.5rem;
 }
 
 .Destaque {
@@ -48,7 +49,7 @@ main h1 {
 .Container {
     background-color: var(--Dark);
     margin: 1rem;
-    padding: 1.5rem 2rem;
+    padding: 2rem 2.3rem;
     min-width: 300px;
     max-width: 600px;
     border-radius: 5px;
@@ -58,17 +59,20 @@ main h1 {
 
 label {
     font-weight: 300;
+    font-size: 1.4rem;
 }
 
 input {
     background-color: var(--Ordinary);
     border: none;
     border-radius: 2px;
-    padding: 3px 7px;
+    padding: 9px 12px;
+    font-size: 1rem;
+    max-width: 150px;
 }
 
 .TextFieldDiv {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.7rem;
     display: flex;
     justify-content: space-between;
 }
@@ -76,14 +80,18 @@ input {
 .Resultado {
     display: none;
     color: var(--Gray);
-    border: 1px solid red;
+    border: 1px solid transparent;
     border-radius: 2px;
     padding: 10px;
     text-align: center;
 }
 
 .Imc {
-    font-size: 0.8rem;
+    font-size: 1rem;
+}
+
+.Mensagem {
+    font-size: 1.3rem;
 }
 
 .SubmitDiv {
@@ -95,7 +103,7 @@ input {
     cursor: pointer;
     color: var(--Ordinary);
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
     background-color: var(--Purple);
     border: none;
